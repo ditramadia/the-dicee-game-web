@@ -11,6 +11,8 @@ body {
     margin: 0 auto;
 }
 
+/* === Title === */
+
 #title {
     padding: 30px 0;
     display: flex;
@@ -22,9 +24,74 @@ h1 {
     font-family: 'Belanosima', sans-serif;
     color: #45c398;
     font-size: 1.8rem;
+    text-align: center;
+}
+
+/* === Content === */
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: #45c398;
+    font-size: 1.3rem;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: white;
+    background: #9c060c;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6d0609;
+}
+
+/* === Dice === */
+
+.dicee-container {
+    width: 100%;
+    margin-top: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.dice-container {
+    width: 100%;
+}
+
+h3 {
+    color: #9c060c;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 250px;
 }
 
 @media (min-width: 425px) {
+    
+    /* === Title === */
+
     #title {
         padding: 50px 0;
     }
@@ -32,14 +99,39 @@ h1 {
     h1 {
         font-size: 3rem;
     }
+
+    /* === Content === */
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 768px) {
-    #title {
-        padding: 80px 0;
+    body {
+        width: 75%;
     }
+
+    /* === Title === */
+
+    #title {
+        padding: 80px 0 30px 0;
+    }
+
+    /* === Content === */
 
     h1 {
         font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* === Dice === */
+
+    .dicee-container {
+        flex-direction: row;
+        max-width: 800px;
     }
 }
