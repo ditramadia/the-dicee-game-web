@@ -8,6 +8,7 @@ body {
     background-color: #35353f;
     font-family: 'Inter', sans-serif;
     width: 90vw;
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -79,13 +80,26 @@ button:hover {
 }
 
 h3 {
-    color: #9c060c;
+    color: #45c398;
     margin-bottom: 10px;
 }
 
 img {
     width: 100%;
     max-width: 250px;
+}
+
+/* === Footer === */
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 @media (min-width: 425px) {
@@ -133,5 +147,11 @@ img {
     .dicee-container {
         flex-direction: row;
         max-width: 800px;
+    }
+
+    /* === Footer === */
+
+    footer {
+        margin-top: 130px;
     }
 }
